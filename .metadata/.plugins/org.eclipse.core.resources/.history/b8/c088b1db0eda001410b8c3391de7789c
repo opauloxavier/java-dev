@@ -1,0 +1,32 @@
+package indexer;
+
+public class ByteMaker {
+
+	public int byteConverter(char a){
+		
+		int code = (int) a;
+	
+		return code;
+	}
+	
+	public void binaryConverter(int code){
+		
+		int numToConvert = byteConverter(code);
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+public static void main(String[] args) {
+	ByteMaker test = new ByteMaker();
+	
+	test.byteConverter('#');
+	
+	
+}	
+	
+}

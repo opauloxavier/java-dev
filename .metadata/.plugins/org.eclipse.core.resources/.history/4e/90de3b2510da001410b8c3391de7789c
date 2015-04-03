@@ -1,0 +1,41 @@
+package indexer;
+
+public class ByteMaker {
+
+	public int charConverter(char a){
+		
+		int code = (int) a;
+	
+		return code;
+	}
+	
+	public void binaryCharConverter(char a){
+		
+		int numToConvert = charConverter('a');
+		
+		String converted = Integer.toBinaryString(numToConvert);
+		
+		int zeroesToAdd = 8-converted.length();
+		
+		String zero = new String();
+		
+		for(int i=0;i<zeroesToAdd;i++)
+			
+		
+		System.out.println(converted);
+		
+	}
+	
+	
+	
+	
+	
+	
+public static void main(String[] args) {
+	ByteMaker test = new ByteMaker();
+	
+	test.binaryCharConverter('a');
+	
+}	
+	
+}

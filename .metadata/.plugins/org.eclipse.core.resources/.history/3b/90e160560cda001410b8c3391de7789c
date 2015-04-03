@@ -1,0 +1,29 @@
+package indexer;
+
+public class ByteMaker {
+
+	public void byteConverter(char a){
+		
+		
+		
+		int code = (int) a; 
+		
+		System.out.println(a);
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+public static void main(String[] args) {
+	ByteMaker test = new ByteMaker();
+	
+	test.byteConverter('a');
+	
+	
+}	
+	
+}

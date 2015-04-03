@@ -1,0 +1,33 @@
+package indexer;
+
+public class ByteMaker {
+
+	public void byteConverter(char a){
+		
+		int code = (int) a;
+		
+		System.out.println(code);
+		
+		char a = (char) 97;
+	}
+	
+	public void binaryConverter(int code){
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+public static void main(String[] args) {
+	ByteMaker test = new ByteMaker();
+	
+	test.byteConverter('a');
+	
+	
+}	
+	
+}
