@@ -1,0 +1,27 @@
+package indexer;
+
+public class RestoreByte extends ByteMaker {
+
+	public char restoreChar(String a){ 
+		
+		char restoredChar =(char) Integer.parseInt(a,2);
+		
+	
+		return restoredChar;
+	}
+	
+	
+	
+	
+public static void main(String[] args) {
+	
+	RestoreByte test = new ByteMaker();
+	
+	System.out.println(test.binaryCharConverter('x'));
+	//System.out.println(test.integerConverter(20000));
+	//System.out.println(test.stringConverter("ab200000"));
+	System.out.println(test.booleanConverter(false));
+	
+}	
+	
+}

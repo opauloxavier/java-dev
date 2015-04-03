@@ -1,0 +1,13 @@
+package indexer;
+
+public class RestoreByte extends ByteMaker {
+
+	public char restoreChar(String a){
+		
+		restoredChar = (char) a;
+		
+	
+		return restoredChar;
+	}
+	
+}

@@ -1,0 +1,39 @@
+package indexer;
+
+public class RestoreByte extends ByteMaker {
+
+	public char restoreChar(String a){ 
+		
+		char properChar = (char) Integer.parseInt(a,2);
+		
+		return properChar;
+	}
+	
+	public String restoreString(String a){
+		
+		String properString=new String();
+		
+		String temp = a.substring(0, 7);
+		
+		return properString;
+	}
+	
+	
+	
+public static void main(String[] args) {
+	
+	RestoreByte test = new RestoreByte();
+	String example = test.binaryCharConverter('8');
+	String example2 = test.stringConverter("Paulo Lindo");
+	
+	//System.out.println(test.restoreChar(example));
+	//System.out.println(test.integerConverter(20000));
+	//System.out.println(test.stringConverter("ab200000"));
+	//System.out.println(test.booleanConverter(false));
+	System.out.println(example2);
+	System.out.println(test.restoreString(example2));
+	
+	
+}	
+	
+}
