@@ -1,0 +1,22 @@
+package indexer;
+
+public class ByteMaker {
+
+	public void byteConverter(){
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+public static void main(String[] args) {
+	
+	
+	
+}	
+	
+}
