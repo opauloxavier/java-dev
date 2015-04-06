@@ -1,0 +1,73 @@
+package fileManager;
+import indexer.RestoreByte;
+import indexer.ByteMaker;
+import java.io.*;
+
+public class Writer {
+	
+	
+	public void makeFile(String a){
+		
+		 BufferedWriter writer = null;
+		
+    	try{    	
+	    	writer = new BufferedWriter( new FileWriter("nomes.dat"));
+	        writer.write(a);
+    	}
+    	catch(IOException e)
+    	{
+    		
+    	}
+    	finally{
+    		try{
+    			if (writer!=null)
+    				writer.close();
+    		}
+    		catch(IOException e)
+    		{
+    			
+    		}
+    	}
+	}
+	
+	public String readFile(){
+		
+		BufferedReader br = null;
+		String finalString=new String();
+		
+		try {
+ 
+			String sCurrentLine;
+	
+ 
+			br = new BufferedReader(new FileReader("C:\\testing.txt"));
+ 
+			while ((sCurrentLine = br.readLine()) != null) {
+				finalString+=sCurrentLine;
+			}
+ 
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (br != null)br.close();
+			} catch (IOException ex) {
+				ex.printStackTrace();
+			}
+		}
+		
+		return finalString;
+	}
+	
+	
+	
+    public static void main(String[] args) throws IOException {
+
+    	Writer test = new Writer();
+    	RestoreByte indexer = new RestoreByte();
+    	String binary = indexer.stringConverter("Testando conversor String");
+    	
+    	test.makeFile(binary);
+
+    }
+}

@@ -34,21 +34,4 @@ public class RestoreByte extends ByteMaker {
 	}
 	
 	
-	
-public static void main(String[] args) {
-	
-	RestoreByte test = new RestoreByte();
-	String example = test.binaryCharConverter('8');
-	String example2 = test.stringConverter("Frase Teste Espero que Funcione");
-	
-	//System.out.println(test.restoreChar(example));
-	//System.out.println(test.integerConverter(20000));
-	//System.out.println(test.stringConverter("ab200000"));
-	//System.out.println(test.booleanConverter(false));
-	System.out.println(example2);
-	System.out.println(test.restoreString(example2));
-	
-	
-}	
-	
 }
