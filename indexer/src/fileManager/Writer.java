@@ -69,6 +69,11 @@ public class Writer {
 		return finalString;
 	}
 	
+	public void printPirocas(){
+		
+		System.out.println("Pirocas Coloridas");
+	}
+	
 	
 	
     public static void main(String[] args) throws IOException {
