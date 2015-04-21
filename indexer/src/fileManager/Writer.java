@@ -1,9 +1,7 @@
 package fileManager;
-import indexer.RestoreByte;
 import java.io.*;
 
 public class Writer {
-	
 	
 	public String defaultPath(){
 		String path = new String();
@@ -73,13 +71,6 @@ public class Writer {
 	
     public static void main(String[] args) throws IOException {
 
-    	Writer test = new Writer();
-    	RestoreByte indexer = new RestoreByte();
-    	String binary = indexer.stringConverter("Testando outra string");
-    	
-    	test.makeFile(binary,"nomes_bytes.dat");
-    	
-    	System.out.println(indexer.restoreString(test.readFile("nomes_bytes.dat")));
-
+    
     }
 }
